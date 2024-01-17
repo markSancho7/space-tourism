@@ -1,3 +1,9 @@
 body {
 	font-family: sans-serif;
+	background-color: grey;
+	box-sizing: border-box;
+	margin: 0px;
+}
+img {
+	max-width: 100%;
 }
