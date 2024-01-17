@@ -14,9 +14,10 @@ import {
 	StyledTotalInfoContainer
 } from './styles';
 import { TABS_TECHNOLOGY } from '../../constants/tabsTechnology';
+import { useTabs } from '../../hooks/useTabs';
 
 const Technology = () => {
-	const [tabNumber, setTabNumber] = useState(0);
+	const { tabNumber, changeTab } = useTabs();
 	return (
 		<StyledTotalContainer>
 			<div>
@@ -27,7 +28,7 @@ const Technology = () => {
 							<StyledTab
 								$active={tabNumber === index}
 								key={tabItem.id}
-								onClick={() => changeTabNumber(index, setTabNumber)}
+								onClick={() => changeTab(index)}
 							>
 								{tabItem.name}
 							</StyledTab>
@@ -46,7 +47,5 @@ const Technology = () => {
 		</StyledTotalContainer>
 	);
 };
-const changeTabNumber = (index, setTAbNumber) => {
-	setTAbNumber(index);
-};
+
 export default Technology;

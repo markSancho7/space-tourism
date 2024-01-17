@@ -13,9 +13,10 @@ import {
 	StyledTabs,
 	StyledTotalContainer
 } from './styles';
+import { useTabs } from '../../hooks/useTabs';
 
 const Crew = () => {
-	const [tabNumber, setTabNumber] = useState(0);
+	const { tabNumber, changeTab } = useTabs();
 	return (
 		<StyledTotalContainer>
 			<StyledInfoContainer>
@@ -30,7 +31,7 @@ const Crew = () => {
 						<StyledButton
 							$active={tabNumber === index}
 							key={tabItem.id}
-							onClick={() => changeTabNumber(setTabNumber, index)}
+							onClick={() => changeTab(index)}
 						></StyledButton>
 					))}
 				</StyledTabs>
@@ -41,7 +42,5 @@ const Crew = () => {
 		</StyledTotalContainer>
 	);
 };
-const changeTabNumber = (setTabNumber, index) => {
-	setTabNumber(index);
-};
+
 export default Crew;

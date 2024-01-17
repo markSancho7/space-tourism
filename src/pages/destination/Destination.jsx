@@ -14,9 +14,10 @@ import {
 	StyledTotalContainerLittleDesc,
 	StyledImg
 } from './styles';
+import { useTabs } from '../../hooks/useTabs';
 
 const Destination = () => {
-	const [tabNumber, setTabnumber] = useState(0);
+	const { tabNumber, changeTab } = useTabs();
 	return (
 		<StyledTotalContainer>
 			<StyledImgContainer>
@@ -29,7 +30,7 @@ const Destination = () => {
 						<StyledTab
 							key={tabItem.id}
 							$active={index === tabNumber}
-							onClick={() => changeTab(setTabnumber, index)}
+							onClick={() => changeTab(index)}
 						>
 							{tabItem.name}
 						</StyledTab>
@@ -59,8 +60,5 @@ const Destination = () => {
 			</StyledTotalInfoContainer>
 		</StyledTotalContainer>
 	);
-};
-const changeTab = (setTabNumber, index) => {
-	setTabNumber(index);
 };
 export default Destination;
