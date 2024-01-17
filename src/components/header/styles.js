@@ -2,8 +2,10 @@ import { NavLink } from 'react-router-dom';
 import { styled } from 'styled-components';
 const StyledTotalContainer = styled.div`
 	display: flex;
-	justify-content: space-between;
 	margin-top: 30px;
+	justify-content: space-between;
+	position: absolute;
+	width: 100%;
 `;
 const StyledImgContainer = styled.div`
 	margin-top: auto;
@@ -40,8 +42,9 @@ const StyledNavLink = styled(NavLink)`
 	font-weight: 400;
 	line-height: normal;
 	letter-spacing: 2.7px;
+	padding-bottom: 30px;
 	&.active {
-		border-bottom: 2px solid white;
+		border-bottom: 4px solid white;
 	}
 `;
 

@@ -1,9 +1,13 @@
 import { styled } from 'styled-components';
 
 const StyledTotalContainer = styled.div`
-	margin: 100px 300px;
+	padding-top: 200px;
+	height: 100vh;
 	display: flex;
 	justify-content: space-between;
+	background-image: url('public/assets/destination/background-destination-desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 `;
 
 const StyledImgContainer = styled.div`

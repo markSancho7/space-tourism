@@ -1,8 +1,11 @@
 import { styled } from 'styled-components';
 const StyledTotalContainer = styled.div`
-	width: 90%;
-	margin: 100px;
 	display: flex;
+	background-image: url('public/assets/home/background-home-desktop.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	padding-inline: 50px;
 `;
 
 const StyledDescriptionContainer = styled.div`
@@ -35,11 +38,11 @@ const StyledDescription = styled.p`
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 32px; /* 177.778% */
+	line-height: 32px;
 `;
 
 const StyledContainerImg = styled.div`
-	margin-top: auto;
+	margin-top: 600px;
 	margin-left: auto;
 	margin-right: 100px;
 	border-radius: 274px;
