@@ -1,14 +1,17 @@
 import { styled } from 'styled-components';
 
 const StyledTotalContainer = styled.div`
-	margin: 100px;
 	display: flex;
 	justify-content: space-between;
+	background-image: url(public/assets/crew/background-crew-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
 `;
 const StyledInfoContainer = styled.div`
 	width: 488px;
-	margin-top: 50px;
-	margin-left: 150px;
+	margin-top: 300px;
+	margin-left: 100px;
 `;
 const StyledMeet = styled.p`
 	color: #fff;
@@ -67,7 +70,7 @@ const StyledButton = styled.button`
 `;
 
 const StyledImgContainer = styled.div`
-	margin-top: 60px;
+	margin-top: auto;
 	margin-right: 100px;
 `;
 export {

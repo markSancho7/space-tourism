@@ -43,6 +43,10 @@ const StyledNavLink = styled(NavLink)`
 	line-height: normal;
 	letter-spacing: 2.7px;
 	padding-bottom: 30px;
+	transition: font-size 0.5s ease;
+	&:hover {
+		font-size: 20px;
+	}
 	&.active {
 		border-bottom: 4px solid white;
 	}

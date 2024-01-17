@@ -1,12 +1,16 @@
 import { styled } from 'styled-components';
 
 const StyledTotalContainer = styled.div`
-	margin-left: 250px;
-	margin-top: 100px;
 	display: flex;
 	justify-content: space-between;
+	height: 100vh;
+	background-image: url(public/assets/technology/background-technology-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 `;
 const StyledSpace = styled.p`
+	margin-top: 400px;
+	margin-left: 50px;
 	color: #fff;
 	font-family: Barlow Condensed;
 	font-size: 28px;
@@ -19,6 +23,7 @@ const StyledTotalInfoContainer = styled.div`
 	display: flex;
 	width: 700px;
 	margin-top: 150px;
+	margin-left: 50px;
 `;
 const StyledTabs = styled.div``;
 
@@ -72,7 +77,11 @@ const StyledContainerImg = styled.div`
 	height: 858px;
 	flex-shrink: 0;
 	margin-right: 100px;
-	margin-top: 220px;
+	margin-top: 400px;
+`;
+const StyledImg = styled.img`
+	height: 300px;
+	margin-top: 20%;
 `;
 
 export {
@@ -85,5 +94,6 @@ export {
 	StyledTerminology,
 	StyledTitle,
 	StyledInfo,
-	StyledContainerImg
+	StyledContainerImg,
+	StyledImg
 };

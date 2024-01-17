@@ -53,6 +53,11 @@ const StyledContainerImg = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: box-shadow 0.5s ease;
+
+	&:hover {
+		box-shadow: 0px 0px 0px 30px rgb(255, 255, 255, 0.5);
+	}
 `;
 const StyledImgText = styled.p`
 	color: #0b0d17;

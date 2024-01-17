@@ -20,7 +20,7 @@ const Destination = () => {
 	return (
 		<StyledTotalContainer>
 			<StyledImgContainer>
-				<StyledTitleImg>PICK YOUR DESTINATION</StyledTitleImg>
+				<StyledTitleImg>01 PICK YOUR DESTINATION</StyledTitleImg>
 				<StyledImg src={DESTINATION_INFO[tabNumber].pathImg} alt='' />
 			</StyledImgContainer>
 			<StyledTotalInfoContainer>

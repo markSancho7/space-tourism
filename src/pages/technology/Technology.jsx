@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { TECHNOLOGY_INFO } from '../../constants/technology';
 import {
 	StyledContainerImg,
+	StyledImg,
 	StyledInfo,
 	StyledInfoContainer,
 	StyledSpace,
@@ -19,7 +20,7 @@ const Technology = () => {
 	return (
 		<StyledTotalContainer>
 			<div>
-				<StyledSpace>SPACE LAUNCH 101</StyledSpace>
+				<StyledSpace>03 SPACE LAUNCH 101</StyledSpace>
 				<StyledTotalInfoContainer>
 					<StyledTabs>
 						{TABS_TECHNOLOGY.map((tabItem, index) => (
@@ -40,7 +41,7 @@ const Technology = () => {
 				</StyledTotalInfoContainer>
 			</div>
 			<StyledContainerImg>
-				<img src={TECHNOLOGY_INFO[tabNumber].pathImg} alt='' />
+				<StyledImg src={TECHNOLOGY_INFO[tabNumber].pathImg} alt='' />
 			</StyledContainerImg>
 		</StyledTotalContainer>
 	);
